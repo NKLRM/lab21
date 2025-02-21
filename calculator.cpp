@@ -22,14 +22,14 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT Message, WPARAM wParam, LPARAM lParam) 
                                         50, 40, 100, 25, hwnd, (HMENU)ID_INPUT1, NULL, NULL);
                 input2 = CreateWindow("EDIT", "", WS_VISIBLE | WS_CHILD | WS_BORDER,
                                         50, 80, 100, 25, hwnd, (HMENU)ID_INPUT2, NULL, NULL);
-                multi_button = CreateWindow("BUTTON", "*", WS_VISIBLE | WS_CHILD | WS_BORDER,
-                                            20, 120, 30, 30, hwnd, (HMENU)ID_MULTIPLY, NULL, NULL);
-                divide_button = CreateWindow("BUTTON", "/", WS_VISIBLE | WS_CHILD | WS_BORDER,
-                                             60, 120, 30, 30, hwnd, (HMENU)ID_DIVIDE, NULL, NULL);
                 plus_button = CreateWindow("BUTTON", "+", WS_VISIBLE | WS_CHILD | WS_BORDER,
-                                           100, 120, 30, 30, hwnd, (HMENU)ID_ADD, NULL, NULL);
+                                            20, 120, 30, 30, hwnd, (HMENU)ID_ADD, NULL, NULL);
                 minus_button = CreateWindow("BUTTON", "-", WS_VISIBLE | WS_CHILD | WS_BORDER,
-                                            140, 120, 30, 30, hwnd, (HMENU)ID_SUBTRACT, NULL, NULL);
+                                             60, 120, 30, 30, hwnd, (HMENU)ID_SUBTRACT, NULL, NULL);
+                multi_button = CreateWindow("BUTTON", "*", WS_VISIBLE | WS_CHILD | WS_BORDER,
+                                           100, 120, 30, 30, hwnd, (HMENU)ID_MULTIPLY, NULL, NULL);
+                divide_button = CreateWindow("BUTTON", "/", WS_VISIBLE | WS_CHILD | WS_BORDER,
+                                            140, 120, 30, 30, hwnd, (HMENU)ID_DIVIDE, NULL, NULL);
         
             break;
             case WM_COMMAND:
